@@ -19,7 +19,8 @@ describe EratosCmd do
     specify { expect(EratosCmd.run(["2"])).to eq "2" }
     specify { expect(EratosCmd.run(["3"])).to eq "2, 3" }
     specify { expect(EratosCmd.run(["30"])).to eq "2, 3, 5, 7, 11, 13, 17, 19, 23, 29" }
-    specify { expect(EratosCmd.run(["120"])).to eq "2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101 ,103, 107, 109, 113" }
+    specify { expect(EratosCmd.run(["31"])).to eq "2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31" }
+    specify { expect(EratosCmd.run(["120"])).to eq "2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113" }
   end
 
 end
